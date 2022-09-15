@@ -20,8 +20,11 @@ h2 {
     
 }
 
-p {
-    margin: 0;
+.kep8 {
+    width: 40%;
+    float: right;
+    clear: both;
+    margin: 20px;
 }
 
 .lap {
@@ -33,4 +36,20 @@ p {
     text-align: justify;
     padding: 0 20px 0 20px;
     font-size: large;
+}
+
+.grid-img {
+    max-width: 200px;
+}
+
+.col {
+    margin: 8px;
+    padding: 8px;
+    background-color: coral;
+    border: 2px solid black;
+}
+
+#egy {
+    margin-bottom: 10px;
+    border: 2px solid black;
 }
