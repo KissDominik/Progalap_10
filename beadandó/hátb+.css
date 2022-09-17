@@ -1,62 +1,20 @@
 body {
     background-color: aliceblue;
-    padding: 2%;
+    padding: 5%;
 }
 
 h1 {
+    position: relative;
+    top: 5px;
     text-align: center;
 }
 
 h2 {
-    margin: 30px 0 10px 0;
-    
+    margin: 50px 0 10px 0;
 }
 
-.kep8 {
-    width: 40%;
-    float: right;
-    clear: both;
-    margin: 20px 0 0 20px;
-    box-shadow:0 0 8px 2px #888;
-}
-
-.lap {
-    margin: 2% auto 2% auto;
-    width: 800px;
-    height: 1100px;
-    background-color:#fffcf1;
-    text-align: justify;
-    padding: 0 20px 0 20px;
-    font-size: large;
-    box-shadow: 0 0 8px 2px #888;
-}
-
-.grid-img {
-    width: 200px;
-}
-
-.col {
-    margin: 8px;
-    padding: 8px;
-    background-color: rgba(131, 77, 58, 0.87);
-    border: 5px solid black;
-    
-}
-
-.row {
-    grid-row-gap: 10px;
-}
-
-table {
-    width: 450px;
-    height: 400px;
-    text-align: center;
-    border: 2px solid black;
-    background-color: white;
-}
-
-.szaporodas {
-    text-align: center;
+hr {
+    border: 2px solid black !important;
 }
 
 .kep10 {
@@ -64,7 +22,7 @@ table {
     float: right;
     clear: both;
     width: 40%;
-    box-shadow:0 0 8px 2px #888;
+    box-shadow: 0 0 8px 2px #888;
 }
 
 .kep12 {
@@ -72,9 +30,77 @@ table {
     float: right;
     clear: both;
     width: 40%;
-    box-shadow:0 0 8px 2px #888;
+    box-shadow: 0 0 8px 2px #888;
 }
 
-td {
-    border: 1px solid black;
+.h1-lenne-de-gyanitom-hogy-farkas-norbert-levente-belekotne {
+    font-size: calc(1.375rem + 1.5vw);
+    position: relative;
+    top: 5px;
+    text-align: center;
+}
+
+.kep8 {
+    width: 40%;
+    float: right;
+    clear: both;
+    margin: 15px 0 0 20px;
+    box-shadow: 0 0 8px 2px #888;
+    border: 25px solid transparent;
+    border-image-slice: 27 27 27 27;
+    border-image-width: 25px 25px 25px 25px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url("/beadandó/fa2.jpg");
+}
+
+.lap {
+    margin: 0 auto 10% auto;
+    width: 800px;
+    height: 1100px;
+    background-color: #fbfbf8;
+    text-align: justify;
+    padding: 0 20px 0 20px;
+    box-shadow: 0 0 8px 2px #888;
+}
+
+.container {
+    padding: 10px;
+}
+
+.grid-img {
+    padding: 10px;
+    border: 20px solid #0000;
+    outline: 2px solid #000;
+    outline-offset: -10px;
+    background: conic-gradient(from 90deg at 2px 2px, #0000 90deg, #000 0);
+}
+
+.row {
+    row-gap: 100px;
+}
+
+.row2 {
+    row-gap: 25px;
+}
+
+.row3 {
+    row-gap: 100px;
+}
+
+table {
+    width: 450px;
+    height: 400px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+}
+
+tr {
+    border: 2px solid black !important;
+}
+
+.szaporodas {
+    text-align: center;
+    margin: 30px 0 30px 0;
 }
