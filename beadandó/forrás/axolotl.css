@@ -1,0 +1,36 @@
+body {
+    
+}
+
+#ax1 {
+    border-image-slice: 27 27 27 27;
+    border-image-width: 25px 25px 25px 25px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url("/beadandó/forrás/frame.jpg");
+}
+
+.table-img {
+    width: 40%;
+    box-shadow: 0 0 8px 2px #888;
+}
+
+.h1-lenne-de-gyanitom-hogy-farkas-norbert-levente-belekotne {
+    
+}
+
+.grid-img {
+    padding: 10px;
+    border: 20px solid #0000;
+    outline: 2px solid #000;
+    outline-offset: -10px;
+    background: conic-gradient(from 90deg at 2px 2px, #0000 90deg, #000 0);
+}
+
+.side-row {
+
+}
+
+.middle-row {
+
+}

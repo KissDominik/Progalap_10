@@ -1,28 +1,28 @@
-1. utf-8, title, lang=hu
-2. h1, h2
+									1. utf-8, title, lang=hu
+									2. h1, h2
 3. linkek, a
-4. képek
-5. táblázat
-6. bootstrap osztály
-7. bootstrap grid
-8. css link
-9. osztály. id
-10. background color, color
-11. width, height
-12. text-align
+									4. képek
+									5. táblázat
+									6. bootstrap osztály
+									7. bootstrap grid
+									8. css link
+									9. osztály. id
+									10. background color, color
+									11. width, height
+									12. text-align
 13. karakterformázás
-14. relatív, aszolút mértékegységek
-15. margin, padding
-16. border
+									14. relatív, aszolút mértékegységek
+									15. margin, padding
+									16. border
 17. link:
-18. float
+									18. float
 19. Az alább felsorolt tulajdonságokból legalább kettő: 2 pont
 	a. Átlátszóság (opacity)
 	b. Háttérkép
 	c. Sorköz (line-height)
 	d. Felsorolások stílusának módosítása (list-style)
 	e. Display tulajdonság (inline / block / inline-block)
-	f. Pozíció (relative / absolute / fixed)
+									f. Pozíció (relative / absolute / fixed)
 	g. Box-sizing (content-box, border-box)
 	h. Z-index
-	i. Clearfix technika (lebegtetés utáni clear)
+									i. Clearfix technika (lebegtetés utáni clear)
