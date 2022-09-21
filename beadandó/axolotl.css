@@ -1,8 +1,9 @@
 body {
-    
+    padding: 0;
 }
 
 #ax1 {
+    box-shadow: 0 0 2px 8px #dcf53a;
     border-image-slice: 27 27 27 27;
     border-image-width: 25px 25px 25px 25px;
     border-image-outset: 0px 0px 0px 0px;
@@ -13,10 +14,6 @@ body {
 .table-img {
     width: 40%;
     box-shadow: 0 0 8px 2px #888;
-}
-
-.h1-lenne-de-gyanitom-hogy-farkas-norbert-levente-belekotne {
-    
 }
 
 .grid-img {
