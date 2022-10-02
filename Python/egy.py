@@ -1,0 +1,7 @@
+print ("Szia Uram")
+print ("hello/t world")
+print ("Szia Uram", end="")
+print (" Szia Uram")
+print ("Szia", "Uram")
+print ("Szia", "Uram", sep="")
+print ("Szia,", "Uram")

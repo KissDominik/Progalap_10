@@ -1,0 +1,43 @@
+Számtani operátorok:
++	összeadás
+-	kivonás
+/	osztás
+//	osztás egészszámra kerekítve
+%	osztási maradék
+*	szorzás
+**	hatványozás
+=	értékadás
+
+Összehasonlító operátorok:
+<	kisebb mint
+<=	kisebb vagy egyenlő
+
+>	nagyobb mint
+>=	nagyobb vagy egyenlő
+
+==	egyenlő
+!=	nem egyenlő
+
+Hozzárendelő operátorok:
+	Pl:		Jelentés:
++=	x += 3		x = x + 3
+-=	x -= 3		x = x - 3
+*=	x *= 3		x = x * 3
+/=	x /= 3		x = x / 3
+%=	x %= 3		x = x % 3
+//=	x //= 3		x = x // 3
+**=	x **= 3		x = x ** 3
+&=	x &= 3		x = x & 3
+|=	x |= 3		x = x | 3
+^=	x ^= 3		x = x ^ 3
+>>=	x >>= 3		x = x >> 3	
+<<=	x <<= 3		x = x << 3
+
+Logikai operátorok:
+not	ellentét
+and	és	(minden elem megefelel a kritériumnak)
+or	vagy	(legalább egy elem megfelel a kritériumnak)
+
+Azonosító operátorok:
+is	Igaz, ha 2 változó értéke megegyezik
+is not	Igaz, ha 2 változó értéke különnböző
