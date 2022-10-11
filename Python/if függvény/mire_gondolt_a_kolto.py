@@ -11,7 +11,5 @@ if p1 >= 0 and p1 <= 50 and p2 >= 0 and p2 <= 50 and p3 >= 0 and p3 <= 50 and p4
             print("Bukott")
     else:
         print("Bukott")
-        exit()
 else:
     print("nem lehetséges pontszám")
-    exit()         
