@@ -5,4 +5,4 @@ h = 0
 while n % p == 0:
     n = n // p
     h += 1
-print(h, "^", p, " * ", n, sep="")
+print(p, "^", h, " * ", n, sep="")
