@@ -1,5 +1,6 @@
 m = int(input("n: "))
 j = 2
+
 while j <= m:
     n = j
     i = 2
