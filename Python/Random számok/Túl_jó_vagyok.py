@@ -1,5 +1,6 @@
 from random import *
+r = random() * 2
 
-for i in range(10):
-    r = round(random() * 2)
+while r != 3:
+    r = int(random() * 3)
     print(r)
