@@ -5,6 +5,12 @@ for i in range(10):
     a.append(randint(0, 100))
 print(a)
 
+
+
+# rendezd növekvő sorrendbe az [a] lista elemeit
+
+
+
 i = 0
 
 while i < len(a) - 1:
