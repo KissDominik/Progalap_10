@@ -38,6 +38,7 @@ while eredetiSzam != 100000:
 
             if prim:
                 print(szamjegy, end="")
+                db += 1
 
         print()
           
