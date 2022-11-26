@@ -1,13 +1,22 @@
-l = []
-db = 0
+lista = []
+
+egesz = 0
+vegtelen = 0
+veges = 0
 
 for i in range(10_000):
-    a = int(input())
-    l.append(a)
+    lista.append(int(input()))
+    
+    if lista[i] % 612 == 0:
+        egesz += 1
 
-for i in range(len(l)):
-    s1 = l[i] / 612
-    s2 = s1 * 612
-    if l[i] == s2:
-        db += 1
-print(db)
+    else:
+        if lista[i] % (9 * 17) == 0:
+            veges += 1
+
+        elif lista[i] % (9 * 17) != 0:
+            vegtelen += 1
+
+print(egesz, "egész")
+print(vegtelen, "végtelen")
+print(veges, "véges (megoldás)")
