@@ -20,9 +20,10 @@ for i in range(len(sor)):
     if len(d) < 36:
         jo = False
 
+    sor[i] = [str(k) for k in sor[i]]
+    
     for j in range(len(sor[i]) - 1):
 
-        sor[i] = [str(k) for k in sor[i]]
 
         y = int(sor[i][j][0])
         x = int(sor[i][j][1])
@@ -38,7 +39,6 @@ for i in range(len(sor)):
 
         if sor[i][j + 1] != l1 and sor[i][j + 1] != l2 and sor[i][j + 1] != l3 and sor[i][j + 1] != l4 and sor[i][j + 1] != l5 and sor[i][j + 1] != l6 and sor[i][j + 1] != l7 and sor[i][j + 1] != l8:
             jo = False
-
 
     if jo == True:
         print(1, end="")
