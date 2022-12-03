@@ -1,10 +1,6 @@
-# 4 a 2 1 3 4 szoval 4+1 input van
-# Hány olyan utat ír le a fájl, amely megvalósítható a kocka élein?
-
 lista = []
 for i in range(100):
-    w = input().split()
-    lista.append(w)
+    lista.append(input().split())
 
 helyes_db = 0
 

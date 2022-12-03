@@ -1,4 +1,0 @@
-R =
-N =
-Q =
-S = Szöveg halmaz / szöveg sorozat

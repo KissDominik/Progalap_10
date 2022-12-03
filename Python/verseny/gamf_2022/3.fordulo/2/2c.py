@@ -1,17 +1,11 @@
-# 4 a 2 1 3 4 szoval 4+1 input van
-# Hány olyan útvonal van a kocka élein megvalósíthatóak között, amelynek során a hangya a kocka
-# minden élén jár?
-
 lista = []
 for i in range(100):
-    w = input().split()
-    lista.append(w)
+    lista.append(input().split())
 
 helyes_db = 0
 
 for i in range(100):
 
-    lehetseges = True
     hely = lista[i][1]
 
     a_b = False
@@ -41,8 +35,8 @@ for i in range(100):
                 hely = "E"
                 a_e = True
             else:
-                lehetseges = False
-                # print("a")
+                hely = False
+
 
         # b lepesek 2 3 4
         elif hely == "B":
@@ -56,8 +50,8 @@ for i in range(100):
                 hely = "A"
                 a_b = True
             else:
-                lehetseges = False
-                # print("b")
+                hely = False
+
 
         # c lepesek 3 4 5
         elif hely == "C":
@@ -71,8 +65,8 @@ for i in range(100):
                 hely = "B"
                 c_b = True
             else:
-                lehetseges = False
-                # print("c")
+                hely = False
+
 
         # d lepesek 1 3 5
         elif hely == "D":
@@ -86,8 +80,8 @@ for i in range(100):
                 hely = "A"
                 a_d = True
             else:
-                lehetseges = False
-                # print("d")
+                hely = False
+
 
         # e lepesek 1 2 6
         elif hely == "E":
@@ -101,8 +95,8 @@ for i in range(100):
                 hely = "A"
                 a_e = True
             else:
-                lehetseges = False
-                # print("e")
+                hely = False
+
 
         # f lepesek 2 4 6
         elif hely == "F":
@@ -116,8 +110,8 @@ for i in range(100):
                 hely = "B"
                 f_b = True
             else:
-                lehetseges = False
-                # print("f")
+                hely = False
+
 
         # g lepesek 4 5 6
         elif hely == "G":
@@ -131,8 +125,8 @@ for i in range(100):
                 hely = "C"
                 g_c = True
             else:
-                lehetseges = False
-                # print("g")
+                hely = False
+
 
         # h lepesek 1 5 6
         elif hely == "H":
@@ -146,13 +140,15 @@ for i in range(100):
                 hely = "D"
                 h_d = True
             else:
-                lehetseges = False
-                # print("h")
+                hely = False
+
         
         else:
-            lehetseges == False
+            hely == False
     
-    if lehetseges == True and a_b == True and a_d == True and a_e == True and e_f == True and e_h == True and f_b == True and h_d == True and g_f == True and g_c == True and g_h == True and c_b == True and c_d == True:
+    if hely != False and a_b and a_d and a_e and e_f and e_h and f_b and h_d and g_f and g_c and g_h and c_b and c_d:
         helyes_db += 1
+        print(i + 1, end=" ")
 
+print()
 print(helyes_db)

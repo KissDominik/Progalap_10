@@ -1,17 +1,12 @@
-# 4 a 2 1 3 4 szoval 4+1 input van
-# Hány olyan útvonal van a kocka élein megvalósíthatóak között, amelynek során a hangya a kocka
-# minden csúcsán jár? 
-
 lista = []
 for i in range(100):
-    w = input().split()
-    lista.append(w)
+    lista.append(input().split())
 
+betuk = ["A", "B", "C", "D", "E", "F", "G", "H"]
 helyes_db = 0
 
 for i in range(100):
 
-    lehetseges = True
     hely = lista[i][1]
 
     a = False
@@ -37,8 +32,7 @@ for i in range(100):
             elif lista[i][j] == "3":
                 hely = "E"
             else:
-                lehetseges = False
-                # print("a")
+                hely = False
 
         # b lepesek 2 3 4
         elif hely == "B":
@@ -52,8 +46,7 @@ for i in range(100):
             elif lista[i][j] == "4":
                 hely = "A"
             else:
-                lehetseges = False
-                # print("b")
+                hely = False
 
         # c lepesek 3 4 5
         elif hely == "C":
@@ -67,8 +60,7 @@ for i in range(100):
             elif lista[i][j] == "5":
                 hely = "B"
             else:
-                lehetseges = False
-                # print("c")
+                hely = False
 
         # d lepesek 1 3 5
         elif hely == "D":
@@ -82,8 +74,7 @@ for i in range(100):
             elif lista[i][j] == "5":
                 hely = "A"
             else:
-                lehetseges = False
-                # print("d")
+                hely = False
 
         # e lepesek 1 2 6
         elif hely == "E":
@@ -97,8 +88,7 @@ for i in range(100):
             elif lista[i][j] == "6":
                 hely = "A"
             else:
-                lehetseges = False
-                # print("e")
+                hely = False
 
         # f lepesek 2 4 6
         elif hely == "F":
@@ -112,8 +102,7 @@ for i in range(100):
             elif lista[i][j] == "6":
                 hely = "B"
             else:
-                lehetseges = False
-                # print("f")
+                hely = False
 
         # g lepesek 4 5 6
         elif hely == "G":
@@ -127,8 +116,7 @@ for i in range(100):
             elif lista[i][j] == "6":
                 hely = "C"
             else:
-                lehetseges = False
-                # print("g")
+                hely = False
 
         # h lepesek 1 5 6
         elif hely == "H":
@@ -142,13 +130,14 @@ for i in range(100):
             elif lista[i][j] == "6":
                 hely = "D"
             else:
-                lehetseges = False
-                # print("h")
+                hely = False
         
         else:
-            lehetseges == False
+            hely == False
     
-    if lehetseges == True and a == True and b == True and c == True and d == True and e == True and f == True and g == True and g == True and h == True:
+    if hely in betuk and a and b and c and d and e and f and g and h:
         helyes_db += 1
+        print(i + 1, end=" ")
 
+print()
 print(helyes_db)

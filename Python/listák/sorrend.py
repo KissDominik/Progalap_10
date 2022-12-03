@@ -15,6 +15,7 @@ while i < len(lista) - 1:
         i = 0
     else:
         i += 1
+
 print(lista)
 print(lista[0], "minimum")
 print(lista[-1], "maximum")

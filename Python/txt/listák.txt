@@ -1,0 +1,21 @@
+a = [1, 2, 3, 4, 5, 6, 6]
+
+lista hivatkozások:
+a[0] = 1
+a[2] = 3
+a[-1] = 6
+a[-3] = 5
+a[:2] = 1, 2, 3
+a[4:] = 5, 6, 6
+a[2:4] = 3, 4, 5
+
+lista műveletek:
+a.append()	hozzáad egy elemet (a) lista végéhez
+a.clear()	kitöröl minden elemet (a) listából
+a.copy()	lemásolja (a) lista minden elemét
+a.count()	megszámolja hány db van egy adott elemből (a) listában
+a.index()	kiírja a keresett elem indexét (ha több bvan, csak az elsőt)
+a.insert()	berak egy elemet (a) lista indexére
+a.pop()		kitöröl egy elemet (a) listából index alapján
+a.remove()	kitöröl egy elemet (a) listából elem alapján
+a.reverse()	megfordítja a lista sorrendjét
