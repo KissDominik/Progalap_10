@@ -2,7 +2,7 @@ Számtani operátorok:
 +	összeadás
 -	kivonás
 /	osztás
-//	osztás egészszámra kerekítve
+//	osztás egész számmal
 %	osztási maradék
 *	szorzás
 **	hatványozás
