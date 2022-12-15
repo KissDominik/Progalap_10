@@ -1,10 +1,10 @@
+n = int(input())
+k = int(input())
 nig = []
-e = int(input())
-r = int(input())
 
-for i in range(e):
+for i in range(n):
     er = int(input())
-    if er < r:
+    if er < k:
         nig.append(er)
 
 print(sum(nig))
