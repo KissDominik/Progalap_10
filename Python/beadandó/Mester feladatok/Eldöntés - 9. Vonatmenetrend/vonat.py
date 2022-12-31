@@ -1,7 +1,7 @@
 n = int(input())
 varos = []
-erkezesi_ido = [] # 24*60 = 1440 a maximum - -1 ha nem ertelmezheto
-indulasi_ido = [] # rendezve van indulasi ido szerint - 9999 ha nem ertelmezheto
+erkezesi_ido = []
+indulasi_ido = []
 
 for i in range(n):
     be = input().split()
