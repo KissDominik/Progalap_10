@@ -1,10 +1,8 @@
 n = int(input())
 k = int(input())
-nig = []
-
+jours = []
 for i in range(n):
-    er = int(input())
-    if er < k:
-        nig.append(er)
-
-print(sum(nig))
+    des_poissons = int(input())
+    if des_poissons < k:
+        jours.append(des_poissons)
+print(sum(jours))
