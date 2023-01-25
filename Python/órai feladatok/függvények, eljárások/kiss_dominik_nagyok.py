@@ -1,6 +1,6 @@
 from random import *
 
-def kiválogatás(l = list, k = int):
+def kiválogatás(l:list, k:int):
     lista = []
     for i in range(len(l)):
         if T(l[i]):
