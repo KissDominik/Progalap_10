@@ -19,6 +19,7 @@ f = open("lottosz.txt", "r")
 lotto = []
 for i in range(51):
     lotto.append([int(x) for x in f.readline().split()])
+f.close()
 
 szam = int(input("szám 1-51 között: "))
 print(lotto[szam-1])
