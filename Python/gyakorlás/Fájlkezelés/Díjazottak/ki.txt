@@ -1,0 +1,4 @@
+3;AngyalPofa;3;CukorFalat;3;ErosPista;
+2;BozontosBeata;2;DohongoDiana;
+1;FickosFerenc;
+1;AloeVera;
