@@ -1,15 +1,28 @@
 from math import *
 
-def feltetel(x):
+def T(x):
     szam = factorial(x-1)
+    print(szam)
     szam += 1
+    print(szam)
     szam /= x
-    return szam.is_intiger()
+    print(szam)
+    szam *= pi
+    print(szam)
+    szam = cos(szam)
+    print(szam)
+    szam = szam**2
+    print(szam)
+    szam = floor(szam)
+    print(szam)
+    print()
+    return szam
 
 def primek(eddig):
     db = 0
-    for i in range(1, eddig):
-        if feltetel(i):
+    for i in range(1, eddig+1):
+        print(i)
+        if T(i) == 1:
             db += 1
     return db
 
@@ -18,12 +31,3 @@ def main():
     print(primek(n))
     
 main()
-
-# n = int(input("prímek n-ig:"))
-# db = 0
-# for j in range(2, n):
-#     print(j, end=" ")
-#     feltetel = ((factorial(j-1) + 1) / j).is_integer()
-#     if feltetel:
-#         db += 1
-# print(db)
