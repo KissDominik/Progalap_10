@@ -1,17 +1,17 @@
 def feladat1(d:list, c:list, e:list, i:list, m:list):
     fr = open("lista.txt", "r")
-    sor = fr.readline().strip().split(".")
-    while sor != [""]:
+    sor = fr.readline().strip()
+    while sor != "":
         d.append(sor)
         sor = fr.readline().strip()
         c.append(sor)
         sor = fr.readline().strip()
         e.append(sor)
         sor = fr.readline().strip()
-        i.append(int(sor))
+        i.append(sor)
         sor = fr.readline().strip()
-        m.append(int(sor))
-        sor = fr.readline().strip().split(".")
+        m.append(sor)
+        sor = fr.readline().strip()
     fr.close()
 
 
@@ -36,10 +36,11 @@ def feladat4(i:list, m:list):
     print("Sorozatnézéssel ", nap, " napot ", ora, " órát és ", perc, " percet töltött", sep="")
 
 
-# def feladat5(d, e, m):
-    # datum = input("dátum (év, hónap, nap): ")
-
-
+def feladat5(d, e, c, m):
+    datum = input("dátum (év.hónap.nap): ")
+    for i in range((len(d))):
+        if d[i] <= datum and m[i] == 0:
+            print(e[i], "\t", c[i])
 
 def main():
     datum = []
@@ -51,6 +52,6 @@ def main():
     feladat2(datum)
     feladat3(megnezte)
     feladat4(ido, megnezte)
-    # feladat5(datum, evad_resz, megnezte)
-    print(datum)
+    feladat5(datum, evad_resz, cim, megnezte)
+    # print(datum)
 main()
