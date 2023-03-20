@@ -8,9 +8,9 @@ def feladat1(d:list, c:list, e:list, i:list, m:list):
         sor = fr.readline().strip()
         e.append(sor)
         sor = fr.readline().strip()
-        i.append(sor)
+        i.append(int(sor))
         sor = fr.readline().strip()
-        m.append(sor)
+        m.append(int(sor))
         sor = fr.readline().strip()
     fr.close()
 
@@ -38,9 +38,25 @@ def feladat4(i:list, m:list):
 
 def feladat5(d, e, c, m):
     datum = input("dátum (év.hónap.nap): ")
-    for i in range((len(d))):
-        if d[i] <= datum and m[i] == 0:
-            print(e[i], "\t", c[i])
+    for i in range(len(d)):
+            if d[i] <= datum and m[i] == 0:
+                print(e[i] + "\t" + c[i])
+
+
+def feladat6(ev, ho, nap:int):
+    napok = ["hétfő", "kedd", "szerda", "csütörtök", "péntek", "szombat", "vasárnap"]
+    honapok = [0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4]
+    hetnapja = napok[(ev + ev // 4 - ev // 100 + ev // 400 + honapok[ho-1] + nap) % 7]
+    return hetnapja
+
+
+def feladat7(nap:str, d:list, c:list):
+    for i in range(len(d)):
+        datum = d[i].split(".")
+        nap2 = feladat6(int(datum[0]), int(datum[1]), int(datum[2]))
+        if nap == nap2:
+            print(c[i])
+
 
 def main():
     datum = []
@@ -53,5 +69,5 @@ def main():
     feladat3(megnezte)
     feladat4(ido, megnezte)
     feladat5(datum, evad_resz, cim, megnezte)
-    # print(datum)
+    feladat7(input("Adja meg a hét egy napját!").strip(), datum, cim)
 main()
