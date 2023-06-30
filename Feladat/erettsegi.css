@@ -1,0 +1,93 @@
+body {
+    color: black;
+    background-size: 100%;
+    padding: 1% 8%;
+    background-image: url(images/graduation.png);
+    background-repeat: repeat-y;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+footer p{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    padding: 10px;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 90%);
+}
+
+header img {
+    max-width: 200px;
+}
+
+h1, h2 {
+    margin: 3%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+ul {
+    list-style: square;
+    line-height: 200%;
+}
+
+th, td {
+    border: 1px solid blue;
+}
+
+img {
+    display: block;
+    width: 400px;
+    margin: auto;
+}
+
+a {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5a3c5a;
+    text-decoration: 1px dashed #5a3c5a;
+}
+
+a:checked {
+    color: #5a3c5a;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+}
+
+#sapka {
+    width: 3em;
+    margin-left: 20px;
+}
+
+.termtud {
+    font-style: italic;
+}
+
+footer {
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
